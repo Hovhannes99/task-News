@@ -1,0 +1,45 @@
+.filter{
+  position: relative;
+  &__buttons {
+    margin-left: 30px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__popup{
+    width: 70%;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    background: #eeeeee;
+    padding: 20px 24px;
+    border-radius: 3px;
+    margin-top: 25px ;
+    margin-left: 20px;
+  }
+  &__title {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: start;
+    color: #3971c1;
+  }
+  &__popup:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    transform: rotate(-45deg);
+    background: #eeeeee;
+    position: absolute;
+    z-index: 1;
+    margin-top: 60px ;
+    top: 70px;
+    left: 230px
+  }
+}

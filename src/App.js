@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './global.scss';
+import Header from "./components/organisms/header/header";
+import WatchlistNews from "./pages/wathclist-news/wathchlist-news";
+import AllNewsContext from "./context/news-context";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-wrapper">
+      <Header/>
+        <AllNewsContext>
+            <WatchlistNews/>
+        </AllNewsContext>
     </div>
   );
 }

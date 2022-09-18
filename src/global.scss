@@ -1,0 +1,25 @@
+@import "components/atoms/primary-button/primary-button";
+@import "components/molecules/filters-container/filters";
+@import "components/organisms/list-news/lists";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #292929;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.app-wrapper{
+  background: #eeee;
+}
